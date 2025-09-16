@@ -1,0 +1,793 @@
+marcela-rodrigues@DESKTOP-MARCELA:/mnt/c/Users/marce/OneDrive/Documentos/testestcc$ esbmc test_bmi088_imu.cpp --unwind 10 --overflow-check --parallel-solving --color
+ESBMC version 7.10.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+[PROGRESS] Parsing test_bmi088_imu.cpp
+[PROGRESS] Converting
+[PROGRESS] Generating GOTO Program
+GOTO program creation time: 0.778s
+GOTO program processing time: 0.036s
+[PROGRESS] Starting Bounded Model Checking
+Symex completed in: 0.011s (307 assignments)
+Slicing time: 0.001s (removed 130 assignments)
+Generated 120 VCC(s), 88 remaining after simplification (177 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 58 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 59 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 62 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 62 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 55 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 62 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 55 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 55 assignments)
+Slicing time: 0.001s (removed 62 assignments)
+No solver specified; defaulting to z3
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 55 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.008s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 231 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on div at file test_bmi088_imu.cpp line 237 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'assertion gyro_z_out == -gyro_z at file test_bmi088_imu.cpp line 217 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Encoding to solver time: 0.002s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.003s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.001s (removed 57 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.013s (removed 57 assignments)
+No solver specified; defaulting to z3
+Encoding to solver time: 0.011s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 217 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.023s (removed 56 assignments)
+No solver specified; defaulting to z3
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 234 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion gyro_y_out == INT16_MAX at file test_bmi088_imu.cpp line 209 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.003s
+✓ PASSED: 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 234 column 5 function test_arithmetic_safety'
+Solving claim 'assertion temp_uint11 <= 2047 at file test_bmi088_imu.cpp line 240 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 214 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion intermediate <= 255 * 8 at file test_bmi088_imu.cpp line 234 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.004s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.020s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.052s
+✓ PASSED: 'arithmetic overflow on div at file test_bmi088_imu.cpp line 237 column 5 function test_arithmetic_safety'
+Slicing time: 0.000s (removed 60 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 60 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 60 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Solving claim 'assertion gyro_z_out == INT16_MAX at file test_bmi088_imu.cpp line 215 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSlicing time: 0.001s (removed 60 assignments)
+No solver specified; defaulting to z3
+
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion gyro_y_out == -gyro_y at file test_bmi088_imu.cpp line 211 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'assertion result == false at file test_bmi088_imu.cpp line 201 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 211 column 13 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.037s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 214 column 9 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on add at file test_bmi088_imu.cpp line 237 column 5 function test_arithmetic_safety' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.002s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 63 assignments)
+No solver specified; defaulting to z3
+Solving claim 'assertion result == true at file test_bmi088_imu.cpp line 203 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 89 column 5 function processGyroData' with solver Z3 v4.8.12Encoding to solver time: 0.001s
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+[PROGRESS] Solving with solver Z3 v4.8.12
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 214 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 208 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSlicing time: 0.001s (removed 63 assignments)Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 88 column 5 function processGyroData' with solver Z3 v4.8.12
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+No solver specified; defaulting to z3
+
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.010s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.010s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Runtime decision procedure: 0.010s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 89 column 5 function processGyroData'
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 214 column 9 function test_gyro_data_processing'
+Solving claim 'assertion gyro_x_out == gyro_x at file test_bmi088_imu.cpp line 206 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 72 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 72 column 5 function processAccelData'
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 89 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 89 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmeticSolving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 73 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.032s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 208 column 9 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 208 column 9 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.004s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.006s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 89 column 5 function processGyroData'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 200 column 5 function test_gyro_data_processing'
+Runtime decision procedure: 0.098s
+✓ PASSED: 'assertion temp_uint11 <= 2047 at file test_bmi088_imu.cpp line 240 column 5 function test_arithmetic_safety'
+Runtime decision procedure: 0.010s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 89 column 5 function processGyroData'
+Runtime decision procedure: 0.140s
+✓ PASSED: 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 231 column 5 function test_arithmetic_safety'
+Runtime decision procedure: 0.100s
+✓ PASSED: 'assertion intermediate <= 255 * 8 at file test_bmi088_imu.cpp line 234 column 5 function test_arithmetic_safety'
+Runtime decision procedure: 0.044s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 88 column 5 function processGyroData'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 73 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.070s
+✓ PASSED: 'assertion result == false at file test_bmi088_imu.cpp line 201 column 9 function test_gyro_data_processing'
+Runtime decision procedure: 0.053s
+✓ PASSED: 'assertion result == true at file test_bmi088_imu.cpp line 203 column 9 function test_gyro_data_processing'
+Runtime decision procedure: 0.108s
+✓ PASSED: 'assertion gyro_y_out == INT16_MAX at file test_bmi088_imu.cpp line 209 column 13 function test_gyro_data_processing'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.074s
+✓ PASSED: 'assertion gyro_z_out == INT16_MAX at file test_bmi088_imu.cpp line 215 column 13 function test_gyro_data_processing'
+Runtime decision procedure: 0.065s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 211 column 13 function test_gyro_data_processing'
+Runtime decision procedure: 0.040s
+✓ PASSED: 'assertion gyro_x_out == gyro_x at file test_bmi088_imu.cpp line 206 column 9 function test_gyro_data_processing'
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.120s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 217 column 13 function test_gyro_data_processing'
+Runtime decision procedure: 0.019s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 73 column 5 function processAccelData'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 159 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.023s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 159 column 5 function test_accel_data_processing'
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 158 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 72 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 158 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 159 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 159 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 72 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.065s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 73 column 5 function processAccelData'
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.126s
+✓ PASSED: 'arithmetic overflow on add at file test_bmi088_imu.cpp line 237 column 5 function test_arithmetic_safety'
+Runtime decision procedure: 0.027s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 72 column 5 function processAccelData'
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.054s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 208 column 9 function test_gyro_data_processing'
+Slicing time: 0.001s (removed 52 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 52 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.002s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 72 column 5 function processAccelData'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 73 column 5 function processAccelData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.205s
+✓ PASSED: 'assertion gyro_z_out == -gyro_z at file test_bmi088_imu.cpp line 217 column 13 function test_gyro_data_processing'
+Runtime decision procedure: 0.140s
+✓ PASSED: 'assertion gyro_y_out == -gyro_y at file test_bmi088_imu.cpp line 211 column 13 function test_gyro_data_processing'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 59 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 158 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 158 column 5 function test_accel_data_processing'
+Slicing time: 0.000s (removed 50 assignments)
+No solver specified; defaulting to z3
+Solving claim 'assertion count <= 0x3FFF at file test_bmi088_imu.cpp line 147 column 5 function test_fifo_count_calculation' with solver Z3 v4.8.12
+Solving claim 'assertion count <= FIFO_SIZE at file test_bmi088_imu.cpp line 144 column 5 function test_fifo_count_calculation' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.030sEncoding to solver time: 0.000s
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 73 column 5 function processAccelData'
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.001s (removed 50 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to z3Slicing time: 0.001s (removed 50 assignments)
+No solver specified; defaulting to z3
+
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.002s
+✓ PASSED: 'assertion count <= 0x3FFF at file test_bmi088_imu.cpp line 147 column 5 function test_fifo_count_calculation'
+Slicing time: 0.001s (removed 56 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 56 assignments)
+Slicing time: 0.001s (removed 61 assignments)No solver specified; defaulting to z3
+
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.006s
+✗ FAILED: 'assertion count <= FIFO_SIZE at file test_bmi088_imu.cpp line 144 column 5 function test_fifo_count_calculation'
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to z3
+Solving claim 'assertion result >= INT16_MIN && result <= INT16_MAX at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function' with solver Z3 v4.8.12
+[Counterexample]
+
+
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+
+State 1 file test_bmi088_imu.cpp line 245 column 5 function main thread 0
+----------------------------------------------------
+  test_choice = 2 (00000000 00000000 00000000 00000010)
+
+State 3 file test_bmi088_imu.cpp line 138 column 5 function test_fifo_count_calculation thread 0
+----------------------------------------------------
+  fifo_len_0 = 0 (00000000)
+
+State 4 file test_bmi088_imu.cpp line 139 column 5 function test_fifo_count_calculation thread 0
+----------------------------------------------------
+  fifo_len_1 = 13 (00001101)
+
+State 5 file test_bmi088_imu.cpp line 61 column 5 function fifoReadCount thread 0
+----------------------------------------------------
+  FIFO_LENGTH_1_MASKED = 13 (00001101)
+
+State 6 file test_bmi088_imu.cpp line 141 column 5 function test_fifo_count_calculation thread 0
+----------------------------------------------------
+  count = 3328 (00001101 00000000)
+
+State 7 file test_bmi088_imu.cpp line 144 column 5 function test_fifo_count_calculation thread 0
+----------------------------------------------------
+Violated property:
+  file test_bmi088_imu.cpp line 144 column 5 function test_fifo_count_calculation
+  assertion count <= FIFO_SIZE
+  (unsigned long int)count <= FIFO_SIZE
+
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on shl at file test_bmi088_imu.cpp line 32 column 5 function combine' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+✓ PASSED: 'assertion result >= INT16_MIN && result <= INT16_MAX at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function'
+Solving claim 'arithmetic overflow on shl at file /tmp/esbmc/src/c2goto/library/libm/musl/exp2f_data.c line 12 column 1' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion ((result >> 8) & 0xFF) == msb at file test_bmi088_imu.cpp line 109 column 5 function test_combine_function' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on shl at file /tmp/esbmc/src/c2goto/library/libm/musl/exp2f_data.c line 12 column 1'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+Slicing time: 0.001s (removed 62 assignments)
+No solver specified; defaulting to z3
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on shl at file test_bmi088_imu.cpp line 32 column 5 function combine'
+Slicing time: 0.000s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 64 assignments)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 53 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 61 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 62 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 64 assignments)
+Slicing time: 0.003s (removed 56 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 61 assignments)
+No solver specified; defaulting to z3
+Solving claim 'assertion !isnan(temperature) at file test_bmi088_imu.cpp line 129 column 5 function test_temperature_calculation' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 58 assignments)
+Runtime decision procedure: 0.016s
+✓ PASSED: 'assertion ((result >> 8) & 0xFF) == msb at file test_bmi088_imu.cpp line 109 column 5 function test_combine_function'
+Slicing time: 0.000s (removed 53 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 64 assignments)
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'assertion accel_y_out == INT16_MAX at file test_bmi088_imu.cpp line 170 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3No solver specified; defaulting to z3
+
+Solving claim 'assertion (result & 0xFF) == lsb at file test_bmi088_imu.cpp line 112 column 5 function test_combine_function' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.001s (removed 64 assignments)
+No solver specified; defaulting to z3
+Encoding to solver time: 0.002s
+[PROGRESS] Solving with solver Z3 v4.8.12
+No solver specified; defaulting to z3
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion accel_y_out >= INT16_MIN && accel_y_out <= INT16_MAX at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+✓ PASSED: 'assertion (result & 0xFF) == lsb at file test_bmi088_imu.cpp line 112 column 5 function test_combine_function'
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.002s
+✓ PASSED: 'assertion accel_y_out == INT16_MAX at file test_bmi088_imu.cpp line 170 column 9 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on shl at file test_bmi088_imu.cpp line 32 column 5 function combine' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.002s (removed 62 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.000s (removed 63 assignments)
+No solver specified; defaulting to z3
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.012s (removed 64 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on shl at file test_bmi088_imu.cpp line 32 column 5 function combine'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 46 column 9 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function'
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.000s (removed 64 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 169 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'assertion temperature >= -40.0f && temperature <= 85.0f at file test_bmi088_imu.cpp line 126 column 5 function test_temperature_calculation' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Slicing time: 0.001s (removed 60 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 172 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.025s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.025s (removed 64 assignments)
+Solving claim 'assertion accel_z_out >= INT16_MIN && accel_z_out <= INT16_MAX at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.003s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 172 column 9 function test_accel_data_processing'
+Runtime decision procedure: 0.003s
+✓ PASSED: 'assertion accel_z_out >= INT16_MIN && accel_z_out <= INT16_MAX at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing'
+Slicing time: 0.028s (removed 60 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.009s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 169 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Slicing time: 0.034s (removed 64 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.035s (removed 61 assignments)
+No solver specified; defaulting to z3
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 175 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 175 column 5 function test_accel_data_processing'
+Solving claim 'assertion !isinf(temperature) at file test_bmi088_imu.cpp line 130 column 5 function test_temperature_calculation' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Slicing time: 0.001s (removed 63 assignments)
+No solver specified; defaulting to z3
+Slicing time: 0.001s (removed 62 assignments)
+No solver specified; defaulting to z3
+Runtime decision procedure: 0.043s
+✓ PASSED: 'arithmetic overflow on mul at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 178 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.002s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 178 column 9 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.070s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.071s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 46 column 9 function updateTemperature'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.003s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 106 column 5 function test_combine_function'
+Runtime decision procedure: 0.061s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 166 column 5 function test_accel_data_processing'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on add at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.030s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 169 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 169 column 5 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on floating-point ieee_mul at file test_bmi088_imu.cpp line 51 column 5 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 193 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 193 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on floating-point ieee_add at file test_bmi088_imu.cpp line 51 column 5 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 192 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 191 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 192 column 5 function test_gyro_data_processing'
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 191 column 5 function test_gyro_data_processing'
+Runtime decision procedure: 0.016s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 88 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 175 column 5 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 191 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion accel_y_out == -accel_y_raw at file test_bmi088_imu.cpp line 172 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 175 column 5 function test_accel_data_processing'
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.002s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.004s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'assertion accel_z_out == INT16_MAX at file test_bmi088_imu.cpp line 176 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.012s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Runtime decision procedure: 0.011s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 191 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on div at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.122s
+✓ PASSED: 'assertion accel_y_out >= INT16_MIN && accel_y_out <= INT16_MAX at file test_bmi088_imu.cpp line 165 column 5 function test_accel_data_processing'
+Runtime decision procedure: 0.019s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 88 column 5 function processGyroData'
+Runtime decision procedure: 0.008s
+✓ PASSED: 'assertion accel_z_out == INT16_MAX at file test_bmi088_imu.cpp line 176 column 9 function test_accel_data_processing'
+Runtime decision procedure: 0.006s
+✓ PASSED: 'arithmetic overflow on div at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature'
+Solving claim 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 193 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Solving claim 'assertion accel_z_out == -accel_z_raw at file test_bmi088_imu.cpp line 178 column 9 function test_accel_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Runtime decision procedure: 0.000s
+✓ PASSED: 'arithmetic overflow on sub at file test_bmi088_imu.cpp line 193 column 5 function test_gyro_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 88 column 5 function processGyroData' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.002s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 83 column 5 function processGyroData'
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 88 column 5 function processGyroData'
+Runtime decision procedure: 0.045s
+✓ PASSED: 'arithmetic overflow on add at file test_bmi088_imu.cpp line 42 column 5 function updateTemperature'
+Runtime decision procedure: 0.026s
+✓ PASSED: 'assertion accel_y_out == -accel_y_raw at file test_bmi088_imu.cpp line 172 column 9 function test_accel_data_processing'
+Runtime decision procedure: 0.004s
+✓ PASSED: 'assertion accel_z_out == -accel_z_raw at file test_bmi088_imu.cpp line 178 column 9 function test_accel_data_processing'
+Solving claim 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 192 column 5 function test_gyro_data_processing' with solver Z3 v4.8.12
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+[PROGRESS] Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+✓ PASSED: 'arithmetic overflow on neg at file test_bmi088_imu.cpp line 192 column 5 function test_gyro_data_processing'
+Runtime decision procedure: 0.136s
+✓ PASSED: 'arithmetic overflow on floating-point ieee_mul at file test_bmi088_imu.cpp line 51 column 5 function updateTemperature'
+Runtime decision procedure: 0.610s
+✓ PASSED: 'arithmetic overflow on floating-point ieee_add at file test_bmi088_imu.cpp line 51 column 5 function updateTemperature'
+Runtime decision procedure: 0.859s
+✗ FAILED: 'assertion temperature >= -40.0f && temperature <= 85.0f at file test_bmi088_imu.cpp line 126 column 5 function test_temperature_calculation'
+
+[Counterexample]
+
+
+State 1 file test_bmi088_imu.cpp line 245 column 5 function main thread 0
+----------------------------------------------------
+  test_choice = 1 (00000000 00000000 00000000 00000001)
+
+State 3 file test_bmi088_imu.cpp line 120 column 5 function test_temperature_calculation thread 0
+----------------------------------------------------
+  temp_msb = 64 (01000000)
+
+State 4 file test_bmi088_imu.cpp line 121 column 5 function test_temperature_calculation thread 0
+----------------------------------------------------
+  temp_lsb = 0 (00000000)
+
+State 5 file test_bmi088_imu.cpp line 42 column 5 function updateTemperature thread 0
+----------------------------------------------------
+  Temp_uint11 = 512 (00000010 00000000)
+
+State 6 file test_bmi088_imu.cpp line 48 column 9 function updateTemperature thread 0
+----------------------------------------------------
+  Temp_int11 = 512 (00000010 00000000)
+
+State 7 file test_bmi088_imu.cpp line 51 column 5 function updateTemperature thread 0
+----------------------------------------------------
+  temperature = 87.000000f (01000010 10101110 00000000 00000000)
+
+State 8 file test_bmi088_imu.cpp line 123 column 5 function test_temperature_calculation thread 0
+----------------------------------------------------
+  temperature = 87.000000f (01000010 10101110 00000000 00000000)
+
+State 9 file test_bmi088_imu.cpp line 126 column 5 function test_temperature_calculation thread 0
+----------------------------------------------------
+Violated property:
+  file test_bmi088_imu.cpp line 126 column 5 function test_temperature_calculation
+  assertion temperature >= -40.0f && temperature <= 85.0f
+  temperature >= -40.000000f && temperature <= 85.000000f
+
+Runtime decision procedure: 2.670s
+✓ PASSED: 'assertion !isnan(temperature) at file test_bmi088_imu.cpp line 129 column 5 function test_temperature_calculation'
+Runtime decision procedure: 2.946s
+✓ PASSED: 'assertion !isinf(temperature) at file test_bmi088_imu.cpp line 130 column 5 function test_temperature_calculation'
+Properties: 88 verified ✓ 86 passed, ✗ 2 failed
+Solver: Z3 v4.8.12 • Decision procedure total time: 9.725s • Avg: 0.110s/property
+
+VERIFICATION FAILED
+marcela-rodrigues@DESKTOP-MARCELA:/mnt/c/Users/marce/OneDrive/Documentos/testestcc$ marcela-rodrigues@DESKTOP-MARCELA:/mnt/c/Users/marce/OneDrmarcela-rodrigues@DESKTOP-MARCELA:/mnt/c/Users/marce/OneDrive/Documentos/testestcc$
+marcela-rodrigues@DESKTOP-MARCELA:/mnt/c/Users/marce/OneDrive/Documentos/testestcc$
